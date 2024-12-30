@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+            font-family: "Open Sans", serif;
+            background: white;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: auto;
+            width: 1500px;
+            height: 100%;
+        }
+        .blockOne {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: space-around;
+            /* background: dodgerblue; */
+        }
+        .left {
+            width: 900px;
+            height: 400px;
+            background: #ddd;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: darkseagreen; */
+        }
+        .right {
+            width: 600px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px ;
+            /* background: lightblue; */
+        }
+        .right h1 {
+            padding-bottom: 20px;
+        }
+        .right p {
+            padding-bottom: 20px;
+        }
+        .right button {
+            padding-bottom: 20px;
+            width: 120px;
+        }
+        button {
+            background: rgb(26, 98, 255);
+            border-radius: 5px;
+            border: 0px;
+            font-size: 15px;
+            line-height: 35px;
+            height: 35px;
+            color: white;
+        }
+        .blockTwo {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: white;
+            background: #666;
+        }
+        .blockThree {
+            display: flex;
+            justify-content:space-between;
+            width: 100%;
+            height: 300px;
+            /* background: lightgoldenrodyellow; */
+        }
+        .card {
+            border: 1px #333 solid;
+            border-radius: 10px;
+            width: 450px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* background: lightcoral; */
+        }
+        
+        .card h1 {
+            padding : 20px ;
+        }
+
+        .card-text {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .card-footer {
+            border: 1px solid #ccc;
+            border-radius:0px 0px 10px 10px;
+            padding: 10px 20px;
+            background: #ebebeb;
+        }
+        .card button {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="blockOne">
+            <div class="left"> 900 X 400</div>
+            <div class="right">
+                <h1>Business Name or Tagline</h1>
+                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                <button>Call to Action!</button>
+            </div>
+        </div>
+        <div class="blockTwo">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium eleniti quos quibusdam, dignissimos perferendis aliquam ex veritatis, </p>
+        </div>
+        <div class="blockThree">
+            <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">CardOne</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci odio veritatis quis mollitia est nihil? Id repudiandae quaerat dolor laborum adipisci, aspernatur blanditiis sunt eius expedita, beatae veniam eos enim?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button>More Info</button>
+                    </div>
+            </div>
+            <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">CardTwo</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci odio veritatis quis mollitia est nihil? Id repudiandae quaerat dolor laborum adipisci, aspernatur blanditiis sunt eius expedita, beatae veniam eos enim?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button>More Info</button>
+                    </div>
+            </div>
+            <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title">CardThree</h1>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci odio veritatis quis mollitia est nihil? Id repudiandae quaerat dolor laborum adipisci, aspernatur blanditiis sunt eius expedita, beatae veniam eos enim?</p>
+                    </div>
+                    <div class="card-footer">
+                        <button>More Info</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
